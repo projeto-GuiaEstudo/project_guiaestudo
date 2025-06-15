@@ -150,26 +150,24 @@
 
     <!-- Seção Serviços -->
     <section id="services" class="services section">
-
       <!-- Título da Seção -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Serviços</h2>
         <p>Necessidades que resultam de algo que escapa, com certeza são valores que precisam ser atendidos</p>
       </div><!-- Fim do Título da Seção -->
-
       <div class="container">
 
         <div class="row gy-4">
-
-
           <!--  Testando -->
           <!-- Descrição: esse código irá funcionar para criar uma tela a parte em cima do serviço selecionado, a tela irá ter uma descrição sobre oque é cada item -->
-
           <!-- Ele já está com CSS e JS, ambos codigos estão localizados no final de cada arquivo citado, respectivamente, main.css e main.js -->
           <!-- Card que chama a explicação -->
+          <!-- A partir daqui -->
+          
 
+          <!-- Junior -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative" onclick="abrirExplicacao()">
+            <div class="service-item position-relative" onclick="abrirExplicacaoJunior()">
               <div class="icon">
                 <i class="bi bi-activity"></i>
               </div>
@@ -179,98 +177,180 @@
               </p>
             </div>
           </div>
-
-          <!-- Overlay de explicação -->
-          <div id="explicacao-overlay" class="overlay">
-            <div class="overlay-content">
-              <span class="fechar" onclick="fecharExplicacao()">&times;</span>
-              <h2>Sobre o Nível Junior</h2>
-              <p>
-                O nível Junior representa profissionais que estão em início de carreira, geralmente com pouca ou nenhuma experiência prática. Costumam estar em fase de aprendizado, mas contribuem significativamente em tarefas sob orientação.
-                <br><br>
-                Eles ainda estão adquirindo domínio das ferramentas, práticas e rotinas do mercado, e frequentemente recebem orientação de profissionais mais experientes. Apesar disso, seu potencial de crescimento é grande e eles são essenciais para a formação de uma equipe equilibrada.
-                <br><br>
-                Este nível é ideal para recém-formados ou aqueles que estão migrando de área e buscando o primeiro emprego formal na área escolhida.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ullam cumque officiis inventore similique eligendi distinctio error praesentium enim doloribus, maxime veritatis minus vitae eius deserunt minima itaque aperiam excepturi. loi
-              </p>
-            </div>
-          </div>
+          <!-- Overlay será carregado dinamicamente -->
+          <script>
+            fetch('components/overlay-junior.html')
+              .then(response => response.text())
+              .then(html => {
+                document.body.insertAdjacentHTML('beforeend', html);
+              });
+          </script>
+          <!-- /Junior -->
 
 
-
-
-
-
-
+          <!-- Pleno -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
+            <div class="service-item position-relative" onclick="abrirExplicacaoPleno()">
               <div class="icon">
                 <i class="bi bi-broadcast"></i>
               </div>
-              <a href="#" class="stretched-link">
-                <h3>Pleno</h3>
-              </a>
-              <p>Ou para um ou outro não. São fáceis para aqueles justos. Livre de corrupção e sem conhecer a dor.</p>
+              <h3>Pleno</h3>
+              <p>
+                Ou para um ou outro não. São fáceis para aqueles justos. Livre de corrupção e sem conhecer a dor.
+              </p>
             </div>
-          </div><!-- Fim do Item de Serviço -->
+          </div>
+          <!-- Overlay será carregado dinamicamente -->
+          <script>
+            fetch('components/overlay-pleno.html')
+              .then(response => response.text())
+              .then(html => {
+                document.body.insertAdjacentHTML('beforeend', html);
+              });
+          </script>
+          <!-- /Pleno -->
 
+
+          <!-- Senior -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
+            <div class="service-item position-relative" onclick="abrirExplicacaoSenior()">
               <div class="icon">
-                <i class="bi bi-easel"></i>
+                <i class="bi bi-broadcast"></i>
               </div>
-              <a href="#" class="stretched-link">
-                <h3>Sênior</h3>
-              </a>
-              <p>Exceto para quem não deseja. Certamente fuga e consequências. Menos isso. Quem quer se beneficia da corrupção.</p>
+              <h3>Sênior</h3>
+              <p>
+                Ou para um ou outro não. São fáceis para aqueles justos. Livre de corrupção e sem conhecer a dor.
+              </p>
             </div>
-          </div><!-- Fim do Item de Serviço -->
+          </div>
+          <!-- Overlay será carregado dinamicamente -->
+          <script>
+            fetch('components/overlay-senior.html')
+              .then(response => response.text())
+              .then(html => {
+                document.body.insertAdjacentHTML('beforeend', html);
+              });
+          </script>
+          <!-- /Senior -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
+          <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative" onclick="">
               <div class="icon">
-                <i class="bi bi-bounding-box-circles"></i>
+                <i class="bi bi-broadcast"></i>
               </div>
-              <a href="#" class="stretched-link">
-                <h3>Asperiores Commodit</h3>
-              </a>
-              <p>Nem sempre há menos dores e consequências. A culpa da fuga de erros e da providência.</p>
-              <a href="#" class="stretched-link"></a>
+              <h3>###</h3>
+              <p>
+                Vazio!
+              </p>
             </div>
-          </div><!-- Fim do Item de Serviço -->
-
+          </div>
+          <script>
+            fetch('components/')
+              .then(response => response.text())
+              .then(html => {
+                document.body.insertAdjacentHTML('beforeend', html);
+              });
+          </script>
+          
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
+            <div class="service-item position-relative" onclick="">
               <div class="icon">
-                <i class="bi bi-calendar4-week"></i>
+                <i class="bi bi-broadcast"></i>
               </div>
-              <a href="#" class="stretched-link">
-                <h3>Velit Doloremque</h3>
-              </a>
-              <p>Sempre com muita responsabilidade. É mais fácil para aqueles que têm corpo próprio. Mas o espírito está no trabalho.</p>
-              <a href="#" class="stretched-link"></a>
+              <h3>###</h3>
+              <p>
+                Vazio!
+              </p>
             </div>
-          </div><!-- Fim do Item de Serviço -->
-
+          </div>
+          <script>
+            fetch('components/')
+              .then(response => response.text())
+              .then(html => {
+                document.body.insertAdjacentHTML('beforeend', html);
+              });
+          </script>
+          
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
+            <div class="service-item position-relative" onclick="">
               <div class="icon">
-                <i class="bi bi-chat-square-text"></i>
+                <i class="bi bi-broadcast"></i>
               </div>
-              <a href="#" class="stretched-link">
-                <h3>Dolori Architecto</h3>
-              </a>
-              <p>Aqui estão os problemas para alguns. Fugir de dores e débitos. Corrupções recusadas com força.</p>
-              <a href="#" class="stretched-link"></a>
+              <h3>###</h3>
+              <p>
+                Vazio!
+              </p>
             </div>
-          </div><!-- Fim do Item de Serviço -->
+          </div>
+          <script>
+            fetch('components/')
+              .then(response => response.text())
+              .then(html => {
+                document.body.insertAdjacentHTML('beforeend', html);
+              });
+          </script>
+          
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+            <div class="service-item position-relative" onclick="">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <h3>###</h3>
+              <p>
+                Vazio!
+              </p>
+            </div>
+          </div>
+          <script>
+            fetch('components/')
+              .then(response => response.text())
+              .then(html => {
+                document.body.insertAdjacentHTML('beforeend', html);
+              });
+          </script>
+          
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="800">
+            <div class="service-item position-relative" onclick="">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <h3>###</h3>
+              <p>
+                Vazio!
+              </p>
+            </div>
+          </div>
+          <script>
+            fetch('components/')
+              .then(response => response.text())
+              .then(html => {
+                document.body.insertAdjacentHTML('beforeend', html);
+              });
+          </script>
+          
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="900">
+            <div class="service-item position-relative" onclick="">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <h3>###</h3>
+              <p>
+                Vazio!
+              </p>
+            </div>
+          </div>
+          <script>
+            fetch('components/')
+              .then(response => response.text())
+              .then(html => {
+                document.body.insertAdjacentHTML('beforeend', html);
+              });
+          </script> -->
+
+
 
         </div>
-
       </div>
-
     </section>
     <!-- /Seção Serviços -->
 

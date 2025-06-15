@@ -230,17 +230,38 @@
 // Testando JS 15/06/2025
 // Codigo criado por VG para usado abrir uma tela na Section Serviços
 
-function abrirExplicacao() {
-  document.getElementById('explicacao-overlay').style.display = 'flex';
+// Junior
+function abrirExplicacaoJunior() {
+  document.getElementById('explicacao-overlay-junior').style.display = 'flex'; 
 }
 
-function fecharExplicacao() {
-  document.getElementById('explicacao-overlay').style.display = 'none';
+function fecharExplicacaoJunior() {
+  document.getElementById('explicacao-overlay-junior').style.display = 'none'; 
+}
+
+// Pleno
+function abrirExplicacaoPleno() {
+  document.getElementById('explicacao-overlay-pleno').style.display = 'flex'; 
+}
+
+function fecharExplicacaoPleno() {
+  document.getElementById('explicacao-overlay-pleno').style.display = 'none'; 
+}
+
+// Senior
+function abrirExplicacaoSenior() {
+  document.getElementById('explicacao-overlay-senior').style.display = 'flex'; 
+}
+
+function fecharExplicacaoSenior() {
+  document.getElementById('explicacao-overlay-senior').style.display = 'none'; 
 }
 
 // Fecha com ESC
 document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape') {
-    fecharExplicacao();
+    fecharExplicacaoJunior();
+    fecharExplicacaoPleno();
+    fecharExplicacaoSenior
   }
 });

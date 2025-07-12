@@ -230,38 +230,120 @@
 // Testando JS 15/06/2025
 // Codigo criado por VG para usado abrir uma tela na Section Serviços
 
-// Junior
-function abrirExplicacaoJunior() {
-  document.getElementById('explicacao-overlay-junior').style.display = 'flex'; 
+
+
+
+
+
+
+
+//<!-- 1 Desenvolvimento de APIs e Microserviços-->
+function abrirExplicacaoDevAPIeMicroservicos() {
+  document.getElementById('explicacao-overlay-devapiemicroservicos').style.display = 'flex'; 
+}
+function fecharExplicacaoDevAPIeMicroservicos() {
+  document.getElementById('explicacao-overlay-devapiemicroservicos').style.display = 'none'; 
 }
 
-function fecharExplicacaoJunior() {
-  document.getElementById('explicacao-overlay-junior').style.display = 'none'; 
+
+//<!-- 2 Desenvolvimento de Inteligência Artificial e Machine Learning -->
+function abrirExplicacaoDevIAeML() {
+  document.getElementById('explicacao-overlay-deviaeml').style.display = 'flex'; 
+}
+function fecharExplicacaoDevIAeML() {
+  document.getElementById('explicacao-overlay-deviaeml').style.display = 'none'; 
 }
 
-// Pleno
-function abrirExplicacaoPleno() {
-  document.getElementById('explicacao-overlay-pleno').style.display = 'flex'; 
+
+//<!-- 3 Desenvolvimento de Jogos Digitais-->
+function abrirExplicacaoDevJD() {
+  document.getElementById('explicacao-overlay-devjd').style.display = 'flex'; 
+}
+function fecharExplicacaoDevJD() {
+  document.getElementById('explicacao-overlay-devjd').style.display = 'none'; 
 }
 
-function fecharExplicacaoPleno() {
-  document.getElementById('explicacao-overlay-pleno').style.display = 'none'; 
+
+//<!-- 4 Desenvolvimento de Realidade Virtual (VR) e Realidade Aumentada (AR) -->
+function abrirExplicacaoDevVreAr() {
+  document.getElementById('explicacao-overlay-devvrear').style.display = 'flex'; 
+}
+function fecharExplicacaoDevVreAr() {
+  document.getElementById('explicacao-overlay-devvrear').style.display = 'none'; 
 }
 
-// Senior
-function abrirExplicacaoSenior() {
-  document.getElementById('explicacao-overlay-senior').style.display = 'flex'; 
+
+//<!-- 5 Desenvolvimento de Sistemas de Segurança da Informação (Cybersecurity) -->
+function abrirExplicacaoDevCybersecurity() {
+  document.getElementById('explicacao-overlay-devcybersecurity').style.display = 'flex'; 
+}
+function fecharExplicacaoDevCybersecurity() {
+  document.getElementById('explicacao-overlay-devcybersecurity').style.display = 'none'; 
 }
 
-function fecharExplicacaoSenior() {
-  document.getElementById('explicacao-overlay-senior').style.display = 'none'; 
+
+//<!-- 6 Desenvolvimento de Sistemas Embarcados -->
+function abrirExplicacaoDevSistemasEmbarcados() {
+  document.getElementById('explicacao-overlay-devsistemasembarcados').style.display = 'flex'; 
 }
+function fecharExplicacaoDevSistemasEmbarcados() {
+  document.getElementById('explicacao-overlay-devsistemasembarcados').style.display = 'none'; 
+}
+
+
+//<!-- 7 Desenvolvimento Cloud Computing -->
+function abrirExplicacaoDevCC() {
+  document.getElementById('explicacao-overlay-devcc').style.display = 'flex'; 
+}
+function fecharExplicacaoDevCC() {
+  document.getElementById('explicacao-overlay-devcc').style.display = 'none';   
+}
+
+
+//<!-- 8 Desenvolvimento Desktop-->
+function abrirExplicacaoDevDesktop() {
+  document.getElementById('explicacao-overlay-devdesktop').style.display = 'flex'; 
+}
+function fecharExplicacaoDevDesktop() {
+  document.getElementById('explicacao-overlay-devdesktop').style.display = 'none';   
+}
+
+
+// <!-- 9 Desenvolvimento Mobile -->
+function abrirExplicacaoDevMobile() {
+  document.getElementById('explicacao-overlay-devmobile').style.display = 'flex'; 
+}
+function fecharExplicacaoDevMobile() {
+  document.getElementById('explicacao-overlay-devmobile').style.display = 'none'; 
+}
+
+
+// <!-- 10 Desenvolvimento WEB -->
+function abrirExplicacaoDevWeb() {
+  document.getElementById('explicacao-overlay-devweb').style.display = 'flex'; 
+}
+function fecharExplicacaoDevWeb() {
+  document.getElementById('explicacao-overlay-devweb').style.display = 'none'; 
+}
+
+
+
+
+
+
 
 // Fecha com ESC
 document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape') {
-    fecharExplicacaoJunior();
-    fecharExplicacaoPleno();
-    fecharExplicacaoSenior
+    fecharExplicacaoDevAPIeMicroservicos();
+    fecharExplicacaoDevIAeML();
+    fecharExplicacaoDevJD();
+    fecharExplicacaoDevVreAr();
+    fecharExplicacaoDevCybersecurity();
+    fecharExplicacaoDevSistemasEmbarcados();
+    fecharExplicacaoDevCC();
+    fecharExplicacaoDevDesktop();
+    fecharExplicacaoDevMobile();
+    fecharExplicacaoDevWeb();
   }
 });

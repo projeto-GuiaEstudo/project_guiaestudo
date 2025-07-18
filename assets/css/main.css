@@ -2438,9 +2438,13 @@ section,
 
 
 
+
+
+
+
+/* Seção de Serviços */
 /* Testando CSS 15/06/2025 */
 /* Codigo criado por VG para usado abrir uma tela na Section Serviços */
-
 /* Overlay global que abre via clique */
 .overlay {
   position: fixed;
@@ -2487,8 +2491,6 @@ section,
   color: #3B82F6;
 }
 
-
-
 /* Títulos e parágrafos */
 .overlay-content h2 {
   margin-top: 0;
@@ -2500,8 +2502,6 @@ section,
   line-height: 1.6;
   color: #334155;
 }
-
-
 
 /* Service-item */
 .service-item {
@@ -2543,3 +2543,82 @@ section,
   margin: 0 0 10px;
   color: #1E3A8A;
 }
+
+
+
+
+
+
+
+
+
+/* Seção de Clientes */
+/* Grid dos recursos (cards lado a lado) */
+.recursos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* Estilo de cada card */
+.recurso {
+  flex: 1 1 300px;
+  max-width: 320px;
+  background-color: #78c2cf;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%; /* Importante para alinhar imagem e texto */
+}
+
+/* Texto fixo na parte superior do card */
+.recurso-texto {
+  flex: 0 0 auto;
+  margin-bottom: 20px;
+  min-height: 120px;
+}
+
+/* Imagem ocupa a parte inferior do card igualmente em todos */
+.recurso img {
+  flex: 1 0 auto;
+  width: 100%;
+  height: 200px; /* altura uniforme para todas */
+  object-fit: contain; /* mantém proporção */
+  border-radius: 8px;
+  background-color: #fff;
+  display: block;
+  margin-top: auto;
+}
+
+/* Título de subtítulo */
+.section-subtitle h3 {
+  font-size: 1.5rem;
+  margin: 30px 0 10px;
+  text-align: center;
+  color: #333;
+}
+
+/* Hover */
+.recurso:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .recurso {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+
+
